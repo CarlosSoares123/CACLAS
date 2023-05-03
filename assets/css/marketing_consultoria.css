@@ -1,0 +1,50 @@
+/*======================SOBRE==========================*/
+.sobre .container{
+  display: grid;
+  gap: 30px;
+}
+
+
+/*«««««««««««««««««««««««««««Etapas»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»*/
+.etapas .container{
+  display: grid;
+  gap: 20px;
+}
+.cartao-conteudo{
+  width: 100%;
+  border-radius: 10px;
+}
+.cartao-conteudo:is(:hover, :focus){
+  box-shadow: var(--shadow-2);
+  transform: scale(1.01);
+}
+.cartao-subtitulo{
+  color: var(--cor-enfase);
+  display: grid;
+  justify-content: center;
+  font-weight: 900 ;
+  color: var(--cor-enfase);
+  margin-bottom: 20px;
+}
+.cartao-titulo{
+  margin-bottom: 20px;
+  color: var(--cor-enfase);
+}
+.lista-grid .cartao-texto{
+  padding-bottom: 20px;
+  color: var(--cor-enfase);
+}
+.bi-person-circle{
+  font-size: 55px;
+  color: var(--cor-base);
+}
+
+/*=========================Responsividade====================================*/
+
+@media(min-width: 992px){
+  .hero{text-align: center;}
+  .hero .container{grid-template-columns: auto;}
+
+  .sobre .section-texto{text-align: left;}  
+  
+}

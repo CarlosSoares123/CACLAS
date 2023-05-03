@@ -1,0 +1,27 @@
+/*((((((((((()HISTORIA())))))))))*/
+.historia-content .section-titulo{ 
+  background-color: hsl(124, 73%, 59%);
+  margin-bottom: 35px;
+}
+
+.historia .section-texto{line-height: 30px; }
+.historia .lista-grid{
+  gap: 10px;
+}
+/*((((((((((()())))))))))*/
+
+.missao .section-titulo{margin: 15px 0 50px 0;}
+
+/*((((((((((()Responsividade())))))))))*/
+
+@media (min-width:768px){
+  .historia .lista-grid .section-texto{
+    text-align: left;
+  }
+}
+@media (min-width:992px){
+  .historia .lista-grid{
+    grid-template-columns: 1fr 1fr ;
+    gap: 15px;
+  }
+}

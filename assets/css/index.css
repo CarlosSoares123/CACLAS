@@ -1,0 +1,43 @@
+
+/*((((((((((()CARACTERISTICAS())))))))))*/
+
+.caracteristicas .section-titulo{ margin-block: 15px 50px;}
+  
+.caracteristicas-cartao{
+  position: relative;                 
+  background-color: var(--white);
+  padding: 25px;
+  padding-top: 40px;
+  margin-top: 24px;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition-2);
+}
+.caracteristicas-cartao:hover{ background-color: var(--cor-base);}
+
+.cartao-numero{
+  position: absolute;
+  top: 0;
+  left: 25px;
+  transform: translateY(-50%);
+  background-color: var(--cor-numero);
+  font-size: var(--fs-numero);
+  font-weight: var(--fw-600);
+  padding: 5px;
+  border-radius: var(--radius-5);
+  min-width: 50px;
+  text-align: center;
+  transition: var(--transition-1);
+}
+.caracteristicas-cartao:hover .cartao-numero{color: var(--cor-base);}
+
+.caracteristicas-cartao .cartao-texto{
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+}
+
+.caracteristicas-cartao :is(.cartao-titulo, .cartao-texto){ transition: var(--transition-1);}
+.caracteristicas-cartao:hover :is(.cartao-titulo, .cartao-texto){ color: var(--white);}
+
+
+
+

@@ -1,0 +1,50 @@
+.metodo .container .section-titulo{
+  margin-bottom: 50px;
+}
+
+.portofolio h2{
+  margin-bottom: 50px;
+}
+.cartao-site{
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+}
+.content-site .site{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.content-site img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content-site .info-text{
+  padding-inline: 15px;
+}
+.content-site .info-text a{
+  cursor:pointer ;
+}
+.content-site .info-text a:is(:hover, :focus){
+  color: rgb(16, 63, 151);
+}
+
+
+@media (min-width:768px ){
+.portofolio .lista-grid{
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  }  
+}
+@media (min-width:992px ){
+  .portofolio .lista-grid{
+  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  }  
+  .metodo .container .section-texto{
+    text-align: left;
+  }
+}
